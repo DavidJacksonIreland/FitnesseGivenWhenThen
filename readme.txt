@@ -23,3 +23,18 @@ Notes:
 ======
 Step methods you create in your subclass of "GivenWhenThenFixture" should return void.
 Step methods for THEN/AND should return a boolean
+
+Examples (Fitnesse Wiki syntax):
+================================
+
+-|Table:Test User Login|
+|given|user [John Doe] arrives at the login page|
+|and|enters password of [BAD_PASSWORD]|
+|when|he clicks on the login button|
+|then|he should see a result message of [Invalid Username or Password!]|
+|and|he is directed to page [loginerror.html]|
+
+-|Table:Test Bank Account|
+|given|user [John Doe] has no money in their account|
+|when|[100] dollars is deposited in to the account|
+|then|the balance should be [100] dollars|
